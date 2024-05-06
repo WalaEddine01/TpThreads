@@ -1,10 +1,10 @@
-public class CounterThread extends Thread{        
+public class Counter implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i <= 10; i++)
         {
             try {
-                sleep(500l);
+                Thread.sleep(500l);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
